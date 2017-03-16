@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>导航栏</title>
+<style type="text/css">
+#nav, #nav ul {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav {
+	background-color: #ecede4;
+	border-radius: 5px 5px 5px 5px;
+	
+	display: table;
+	padding: 10px;
+	position: relative;
+}
+
+#nav ul {
+	background-color: red;
+	border-radius: 0 5px 5px 5px;
+	border-width: 0 1px 1px;
+	left: -9999px;
+	overflow: hidden;
+	padding: 20px 0 10px;
+	position: absolute;
+	top: -9999px;
+
+}
+
+#nav li {
+	float: left;
+	position: relative;
+}
+
+#nav li a {
+	color: #FFFFFF;
+	display: block;
+	font-size: 16px;
+	padding: 7px 20px;
+	text-decoration: none;
+}
+
+#nav li:hover>a {
+	background-color: red;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+}
+
+#nav li:hover>a.hsubs {
+	border-radius: 5px 5px 0 0;
+}
+
+#nav li:hover ul.subs {
+	left: 0;
+	top: 34px;
+	width: 300px;
+
+}
+
+#nav ul li {
+	width: 100%;
+}
+
+#nav ul li:hover>a {
+	background-color: #222222 !important;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.a{
+ float: left;
+}
+
+</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<ul id="nav">
+			<li><img src="3.png"></li>
+			<li><a class="hsubs" href="#">起点中文网</a>
+				<ul class="subs">
+					<li><a href="#">起点女生网</a></li>
+					<li><a href="#">创世中文网</a></li>
+					<li><a href="#">云起书院</a></li>
+
+				</ul></li>
+
+			<li><a class="hsubs" href="#">手机阅读</a>
+				<ul class="subs">
+					<li><a href="#"><img src="2.png"></a></li>
+					<li><a href="#">苹果下载</a></li>
+					<li><a href="#">安卓下载</a></li>
+				</ul></li>
+			<li><a class="hsubs" href="#">最近阅读</a>
+				<ul class="subs">
+					<div class="a"><a href="#"><img src="4.jpg" ></a></div>
+					<div class="b">
+						<h4>
+							<a href="">寒天诀</a>
+						</h4>
+						<p>
+							<span>最新章节:</span><a class="blue" href="">第十六章 炎武故友（二更）</a>
+						</p>
+						
+					</div>
+				</ul></li>
+			<li><a class="hsubs" href="#">快速导航</a>
+				<ul class="subs">
+					<div display="block" class="d" >
+						<h3>分类频道</h3>
+						<a href="">玄幻</a> <a href="">奇幻</a> <a href="">武侠</a> <a href="">仙侠</a>
+						<a href="">都市</a> <a href=>职场</a> <a href="">历史</a> <a href="">军事</a>
+						<a href="">游戏</a> <a href="">体育</a> <a href="">科幻</a> <a href="">灵异</a>
+						<a href="">二次元</a> <a href="">完本</a> <a href="">女生</a> <a href="">三江</a>
+					</div>
+				</ul></li>
+
+
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+
+			<li><a href="#">登录</a></li>
+			<li><a href="#">注册</a></li>
+			<li><a href="#">充值</a></li>
+		</ul>
+
+	</div>
+</body>
+</html>
